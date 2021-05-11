@@ -1,0 +1,144 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin-top: 14px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:yellowgreen;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  
+  
+  .slider.round {
+    border-radius: 33px;
+  }
+  
+  .slider.round:before {
+    border-radius: 33%;
+  }
+
+  .button1 {
+    background-color: #D0D7DA;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-top: 9px;
+    position: absolute;
+    color: black;
+  }
+
+  .button2{
+    background-color:#D4B3DD ;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-top: 9px;
+    position: absolute;
+    color: black;
+    width: 80%;
+  }
+
+  .button3{
+    background-color:yellowgreen ;
+    border: none;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-top: 9px;
+    position: absolute;
+    color: black;
+    width: 20%;
+  }
+
+
+  .first{
+      width: 100%;
+      height: 75px;
+      background-color:white;
+      margin-top: 10px;
+      box-shadow: 3px 3px 3px 3px  #888888    }
+
+   .second{
+    width: 100%;
+    height: 110px;
+    background-color:white;
+    margin-top: 10px;
+    box-shadow: 0px 1px 2px 1px  #888888    }
+
+    .third{
+      width: 100%;
+      height: 130px;
+      background-color: white;
+      box-shadow: 1px 1px 2px 1px  #888888    }
+
+
+    .third1{
+      background-color:whitesmoke;
+      width: 90%;
+      height: 90%;
+      margin-left: 45px;
+      margin-top: 15px;
+    }
+    .row{
+      width: 90%;
+      margin-left: 37mm;
+      
+    }
+   
+
+      

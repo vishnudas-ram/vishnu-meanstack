@@ -1,0 +1,41 @@
+
+    <div class="myform">
+
+  
+        <h3 style="color: tomato;text-align: center;">PRODUCT DETAILS</h3>
+        
+       
+      </div>
+      
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Price</th>
+            <th>Brand</th>
+            <th>Care</th>
+            <th>Category</th>
+            <th>Colour</th>
+            <th>Material</th>
+            <th>Size</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let i of myserv.arrayproduct">
+            <td>{{i.name}}</td>
+            <td>{{i.status}}</td>
+            <td>{{i.price}}</td>
+            <td>{{i.brand}}</td>
+            <td>{{i.care}}</td>
+            <td>{{i.category}}</td>
+            <td>{{i.colour}}</td>
+            <td>{{i.material}}</td>
+            <td>{{i.size}}</td>
+            
+            <td><button type="button" (click)="tableDelete(i._id)">Delete</button></td>
+          </tr>
+    </table>
+    
+
+
+

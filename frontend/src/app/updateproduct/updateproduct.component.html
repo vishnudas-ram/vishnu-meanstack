@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUCT BOOKING</title>
+</head>
+
+<body>
+<div class="myform">
+
+  
+  <h3 style="color: tomato;text-align: center;">PRODUCT DETAILS</h3>
+  
+  <form #bookproduct="ngForm" (ngSubmit)="submitFunction(bookproduct)">
+
+  <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="myserv.selectedproduct._id"><br><br>
+
+ 
+  <div>
+  <label>Name:</label>
+  <input type="text" name="name" #name="ngModel"  placeholder="Enter product name" [(ngModel)]="myserv.selectedproduct.name" required><br><br>
+</div>
+
+   
+  <div>
+     <label>Status:</label>
+  <input type="text" name="status" #status="ngModel"  placeholder="Enter status" [(ngModel)]="myserv.selectedproduct.status"><br><br> 
+    </div>
+
+    <div>
+     <label>Price:</label>
+    <input type="text" name="price" #price="ngModel" placeholder="Enter price" [(ngModel)]="myserv.selectedproduct.price"><br><br>
+   </div>
+
+    <div>
+     <label>Brand:</label>
+  <input type="text" name="brand" #brand="ngModel"  placeholder="Enter brand" [(ngModel)]="myserv.selectedproduct.brand"><br><br>
+    </div>
+
+     <div>
+     <label>Care:</label>
+  <input type="text" name="care" #care="ngModel" placeholder="Care" [(ngModel)]="myserv.selectedproduct.care"><br><br>
+   </div>
+
+    <div>
+     <label>Category:</label>
+  <input type="text" name="category" #category="ngModel" placeholder="Enter category" [(ngModel)]="myserv.selectedproduct.category"><br><br>
+    </div>
+
+    <div>
+     <label>Colour:</label>
+  <input type="text" name="colour" #colour="ngModel" placeholder="Enter colour" [(ngModel)]="myserv.selectedproduct.colour"><br><br>
+   </div>
+
+    <div>
+     <label>Material:</label>
+  <input type="text" name="material" #material="ngModel" placeholder="material" [(ngModel)]="myserv.selectedproduct.material"><br><br>
+    </div>
+
+    <div>
+     <label>Size:</label>
+  <input type="text" name="size" #size="ngModel" placeholder="Your size" [(ngModel)]="myserv.selectedproduct.size"><br><br>
+    </div>
+    
+ 
+ 
+    
+  <button type="button" (click)="resetTable(bookproduct)">Reset</button>
+  <button type="Submit" style="margin-left: 5px;" [disabled]="!bookproduct.valid">update</button>
+
+</form>
+
+</div>
+<div class="formupd">
+  <table>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Price</th>
+    <th>Brand</th>
+    <th>Care</th>
+    <th>Category</th>
+    <th>Colour</th>
+    <th>Material</th>
+    <th>Size</th>
+    <th>Edit</th>
+    <tr *ngFor="let i of myserv.arrayproduct">
+      <td>{{i.name}}</td>
+      <td>{{i.status}}</td>
+      <td>{{i.price}}</td>
+      <td>{{i.brand}}</td>
+      <td>{{i.care}}</td>
+      <td>{{i.category}}</td>
+      <td>{{i.colour}}</td>
+      <td>{{i.material}}</td>
+      <td>{{i.size}}</td>
+      <td><button type="button" (click)="tableEdit(i)">Edit</button></td>
+       </tr>
+  </table>
+</div>
+</body>
+</html>
+

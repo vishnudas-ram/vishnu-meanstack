@@ -1,0 +1,56 @@
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+  
+   button:hover {
+    background-color: #45a049;
+  }
+  
+  .myform {
+    width: 70%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 70mm;
+  }
+  .formupd{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 55mm;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #8695CF;
+    color: white;
+  }
